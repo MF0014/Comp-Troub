@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Module3_Setup.Module_3">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/navigationToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:text="Chapters"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/backButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- TextView positioned below VideoView -->
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/m2_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="No Audio Feedback"
+                    android:textAlignment="center"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="center"
+                    android:src="@drawable/mute_audio"
+                    android:layout_margin="10dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="This often indicates that between the output device and your computer.\n"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/green_rounded_bg"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:id="@+id/modFrstSol">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="\nFirst Solution:"
+                    android:textAlignment="center"
+                    android:textSize="25sp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/firstSolPic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/restart_pc"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reboot/Restart your computer\n"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Explanation:"
+                        android:textAlignment="center"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="It might be possible that your computer is acting up.\n\nRestarting your computer
+might help because it resets your computer memory."
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/green_rounded_bg"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:id="@+id/modScndSol">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="\nSecond Solution:"
+                    android:textAlignment="center"
+                    android:textSize="25sp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/scndSolPic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/sound_settings"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Check your sound settings\n"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Explanation:"
+                        android:textAlignment="center"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:layout_margin="10dp"/>
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="It might be possible that your audio settings has been modified.\n\nTry checking your sound settings in your windows setting if it is muted or the audio device you using is enabled."
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/green_rounded_bg"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:id="@+id/modThrdSol">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="\nThird Solution:"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:paddingBottom="10dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/thrdSolPic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/jack_plug"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="Replug your audio output device/s"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Explanation:"
+                        android:textAlignment="center"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:layout_margin="10dp"/>
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="\nIt might be possible that your audio device isnt plugged correctly.\n\nTry replugging your audio device to see if theres any changes."
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/green_rounded_bg"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:id="@+id/modFrthSol">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="\nFourth Solution:"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:paddingBottom="10dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/frthSolPic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/device_manager_audio" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Reinstall your Audio Drivers"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Explanation:"
+                        android:textAlignment="center"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="It might be possible that your audio drivers are not installed correctly.\n\nTry reinstall your audio drivers"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/yellow_rounded_bg"
+                android:layout_margin="10dp"
+                android:id="@+id/modTutorOne">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/black"
+                    android:text="Steps to reinstall your audio drivers:"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/black"
+                    android:text="1. Search &quot;Device Manager&quot; to your Windows Searchbar"/>
+
+                <ImageView
+                    android:id="@+id/audio_step_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/audio_step_1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/black"
+                    android:text="2. Navigate and click the &quot;>&quot; to &quot;Sound, video and game controllers&quot;"/>
+
+                <ImageView
+                    android:id="@+id/audio_step_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/audio_step_2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/black"
+                    android:text="3. Find the audio driver you want to reinstall"/>
+
+                <ImageView
+                    android:id="@+id/audio_step_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/audio_step_3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/black"
+                    android:text="4. Right click on the audio device and select Uninstall."/>
+
+                <ImageView
+                    android:id="@+id/audio_step_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/audio_step_4" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/black"
+                    android:text="5. After uninstalling the device, restart your computer."/>
+
+                <ImageView
+                    android:id="@+id/audio_step_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/audio_step_5" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/black"
+                    android:text="6. Once the computer has restarted, Windows will automatically detect the new hardware and will automatically install the driver."/>
+
+                <ImageView
+                    android:id="@+id/audio_step_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/audio_step_6" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/black"
+                    android:text="For the video tutorial link, Press the button below"/>
+
+                <Button
+                    android:id="@+id/tutorOneLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/link_button_bg"
+                    android:text="Click here"
+                    android:textColor="@color/black"
+                    android:visibility="visible"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"/>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blue_rounded_bg"
+                android:orientation="vertical"
+                android:layout_margin="20dp"
+                android:id="@+id/modSynp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Summary:"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Make sure your audio devices are in good condition."
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Checking the sound settings first to see if its modified."
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingBottom="15dp"/>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Try replug your audio device in a different port or try in a different computer device."
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Restarting your computer device helps a lot because it will resets your drivers."
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingBottom="30sp"/>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="If symptoms persist, press the button below for more info:"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:layout_margin="10dp"/>
+
+                <Button
+                    android:id="@+id/mod3Link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/link_button_bg"
+                    android:text="Click here"
+                    android:textColor="@color/black"
+                    android:visibility="visible" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/modQuiz"
+                    android:layout_width="440dp"
+                    android:layout_height="85dp"
+                    android:background="#ebd957"
+                    android:text="Challenge Me!"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:layout_marginTop="16dp"
+                    />
+            </LinearLayout>
+
+            <!-- Add your other views here -->
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/navigationPanel"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:background="#555956"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/backButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone">
+
+        <!-- Navigation items -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/frstSol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_rounded_bg"
+            android:textColor="@color/black"
+            android:text="1st Solution"
+            android:layout_margin="8dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/scndSol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_rounded_bg"
+            android:textColor="@color/black"
+            android:text="2nd Solution"
+            android:layout_margin="8dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/thrdSol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_rounded_bg"
+            android:textColor="@color/black"
+            android:text="3rd Solution"
+            android:layout_margin="8dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/frthSol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_rounded_bg"
+            android:textColor="@color/black"
+            android:text="4th Solution"
+            android:layout_margin="8dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/tutorOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_rounded_bg"
+            android:textColor="@color/black"
+            android:text="Steps To Reinstall Audio Drivers"
+            android:layout_margin="8dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/synp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_rounded_bg"
+            android:textColor="@color/black"
+            android:text="Summary"
+            android:layout_margin="8dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/challMe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_rounded_bg"
+            android:textColor="@color/black"
+            android:text="Challenge me"
+            android:layout_margin="8dp"/>
+
+        <!-- Add more navigation items as needed -->
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

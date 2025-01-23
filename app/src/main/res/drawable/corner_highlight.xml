@@ -1,0 +1,7 @@
+<!-- res/drawable/corner_highlight.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:name="highlight">
+    <corners android:radius="10dp" /> <!-- Adjust the radius as needed -->
+    <stroke android:width="10dp" android:color="#FFFF00" /> <!-- Set the stroke color to yellow -->
+    <solid android:color="#AAAAAA" /> <!-- Set the solid color as transparent -->
+</shape>

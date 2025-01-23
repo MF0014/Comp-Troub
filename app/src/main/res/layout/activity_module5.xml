@@ -1,0 +1,1274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Module5_Setup.Module_5">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/navigationToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:text="Chapters"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/backButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- TextView positioned below VideoView -->
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/m2_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Slow Running Computer"
+                    android:textAlignment="center"
+                    android:textSize="40sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/mod5Intro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/windows_loading" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="While using your computer, you might recognize that it may take up for a while to load
+until your computer is being unstable to use."
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="This often indicates that your computer hardware and software that needs to repair or upgrade."
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/green_rounded_bg"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:id="@+id/modFrstSol">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="\nFirst Solution:"
+                    android:textAlignment="center"
+                    android:textSize="25sp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/firstSolPic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/storage_full"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Free up your storage space"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Explanation:"
+                        android:textAlignment="center"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Sometimes low on storage space might cause instability to your computer."
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:layout_margin="10dp"/>
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Your computer will run slowly due to insufficient space to provide functionality to your other applications or software."
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:layout_margin="10dp"/>
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Delete Unnessesary files or uninstall some of unused applications."
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:layout_margin="10dp"/>
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="We will be using windows disk cleanup for removing temporary files."
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:layout_margin="10dp"/>
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/yellow_rounded_bg"
+                android:layout_margin="10dp"
+                android:id="@+id/modTutorOne">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/black"
+                    android:text="How to delete temporary files using Windows Disk Cleanup"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/black"
+                    android:text="1. Go to file explorer then right click &quot;Local Disk (C:)&quot;."/>
+
+                <ImageView
+                    android:id="@+id/clean_Up_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/clean_up_1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/black"
+                    android:text="2. After clicking &quot;Local Disk (C:)&quot;, click on Properties and Locate the Button &quot;Disk Cleanup&quot; then click it"/>
+
+                <ImageView
+                    android:id="@+id/clean_Up_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/clean_up_2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/black"
+                    android:text="3. After Clicking the &quot;Disk Cleanup&quot; and wait the program to load up."/>
+
+                <ImageView
+                    android:id="@+id/clean_Up_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/clean_up_3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/black"
+                    android:text="4. When the program has finished loading up you may check all the boxes of temporary files to delete then press the &quot;OK&quot; button."/>
+
+                <ImageView
+                    android:id="@+id/clean_Up_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/clean_up_4" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/black"
+                    android:text="5. A window may pop up that says &quot; Are you sure you want to permanently delete these files?&quot;, Press the button &quot;Delete Files&quot;."/>
+
+                <ImageView
+                    android:id="@+id/clean_Up_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/clean_up_5" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/black"
+                    android:text="Optional:" />
+
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_margin="20dp"
+                android:textColor="@color/black"
+                android:text="6. After you delete the temporary files, you may click on &quot;Clean up system files&quot; and wait the program to finish loading up." />
+
+                <ImageView
+                    android:id="@+id/clean_Up_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/clean_up_6" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/black"
+                    android:text="7. when the program finished loading up, you may check all the temporary files and click the &quot;OK&quot; button" />
+
+                <ImageView
+                    android:id="@+id/clean_Up_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/clean_up_7" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/black"
+                    android:text="8. A window may pop up that says &quot;Are you sure you want to permanently delete these files?&quot;, Press the button &quot;Delete Files&quot;." />
+
+                <ImageView
+                    android:id="@+id/clean_Up_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/clean_up_8" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp" android:textColor="@color/black"
+                    android:text="For video tutorial, click the button below"/>
+
+                <Button
+                    android:id="@+id/tutorOneLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/link_button_bg"
+                    android:text="Click here"
+                    android:textColor="@color/black"
+                    android:visibility="visible"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/green_rounded_bg"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:id="@+id/modScndSol">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="\nSecond Solution:"
+                    android:textAlignment="center"
+                    android:textSize="25sp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/scndSolPic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/windows_update"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Update your operating system and system drivers"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Explanation:"
+                        android:textAlignment="center"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:layout_margin="10dp"/>
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Outdated drivers causes your computer to crash where it will lead to unexpected shutdowns."
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:layout_margin="10dp"/>
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="There are many ways to update your drivers but we will using &quot;Windows Update&quot; to check your outdated drivers"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:layout_margin="25dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/yellow_rounded_bg"
+                android:layout_margin="10dp"
+                android:id="@+id/modTutorTwo">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/black"
+                    android:text="Steps to update your drivers using Windows Updates (win10/win11)"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/black"
+                    android:text="1. Go to Settings by pressing the windows icon at the bottom left corner or press the windows key to your keyboard
+and press the settings icon."/>
+
+                <ImageView
+                    android:id="@+id/windows_update_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/window_update_1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/black"
+                    android:text="2. After you open the settings, go to update and security and press the check updates."/>
+
+                <ImageView
+                    android:id="@+id/windows_update_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/window_update_2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/black"
+                    android:text="3. After checking for available updates, press update now. While waiting to install the updates, press the view optional updates."/>
+
+                <ImageView
+                    android:id="@+id/windows_update_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/window_update_3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/black"
+                    android:text="4. after pressing the View optional updates, you may see available updates for your drivers. Update and install all of them."/>
+
+                <ImageView
+                    android:id="@+id/windows_update_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/window_update_4" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/black"
+                    android:text="5. After updating all of your drivers and operating system updates, Restart your computer to apply your driver updates."/>
+
+                <ImageView
+                    android:id="@+id/windows_update_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/windows_update" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/black"
+                    android:text="For video tutorial, click the button below"/>
+
+                <Button
+                    android:id="@+id/tutorTwoLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/link_button_bg"
+                    android:text="Click here"
+                    android:textColor="@color/black"
+                    android:visibility="visible"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/green_rounded_bg"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:id="@+id/modThrdSol">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="\nThird Solution:"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:paddingBottom="10dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/thrdSolPic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/check_malware"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="Check for malware/viruses"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Explanation:"
+                        android:textAlignment="center"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:layout_margin="10dp"/>
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Blue Screen of death are commonly found if there are any active malwares."
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:layout_margin="10dp"/>
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Try scanning your computer using a built in anti-virus software such as Microsoft Defender."
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/yellow_rounded_bg"
+                android:layout_margin="10dp"
+                android:id="@+id/modTutorThree">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/black"
+                    android:text="How to detect malwares using Microsoft Defender (win10/win11)"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="1. Press the window searchbar and type &quot;Windows Security&quot; and press it then press the &quot;Virus &amp; threat protection&quot;."
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/malware_check_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/malware_check_1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/black"
+                    android:text="2. After you open &quot;Virus &amp; threat protection&quot;, press the button &quot;Quick Scan&quot; to start searching for malware and viruses"/>
+
+                <ImageView
+                    android:id="@+id/malware_check_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/malware_check_2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/black"
+                    android:text="3. Wait the program to finish scanning your computer."/>
+
+                <ImageView
+                    android:id="@+id/malware_check_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/malware_check_3" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/black"
+                    android:text="For video of advanced detecting malwares, click the button below"/>
+
+                <Button
+                    android:id="@+id/tutorThreeLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/link_button_bg"
+                    android:text="Click here"
+                    android:textColor="@color/black"
+                    android:visibility="visible"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/green_rounded_bg"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:id="@+id/modFrthSol">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="\nFourth Solution:"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:paddingBottom="10dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/frthSolPic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/pc_build"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="Upgrade your equipment"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Explanation:"
+                        android:textAlignment="center"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:layout_margin="10dp"/>
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Upgrading your PC equipment can significantly improve its performance, particularly if your current setup is causing slow operation. "
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:layout_margin="10dp"/>
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="For guide on how to upgrade your PC equipment, click the button below"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:layout_margin="10dp"/>
+
+                    <Button
+                        android:id="@+id/tutorFourLink"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/link_button_bg"
+                        android:text="Click here"
+                        android:textColor="@color/black"
+                        android:visibility="visible"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/green_rounded_bg"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:id="@+id/modFfthSol">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="\nFifth Solution:"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:paddingBottom="10dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/ffthSolPic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/windows_performance"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Adjust system performance"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Explanation:"
+                        android:textAlignment="center"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Adjusting your system visuals may increase perfomance. It disables animation features of windows."
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:layout_margin="20dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/yellow_rounded_bg"
+                android:layout_margin="10dp"
+                android:id="@+id/modTutorFive">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/black"
+                    android:text="How to Adjust Windows Visuals using Advance System Properties"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/black"
+                    android:text="1. Go to file explorer and right click &quot;This PC&quot; and press &quot;Properties&quot;"/>
+
+                <ImageView
+                    android:id="@+id/perf_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/perf_1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/black"
+                    android:text="2. A window will show up and find &quot;Advance system settings&quot; then press it"/>
+
+                <ImageView
+                    android:id="@+id/perf_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/perf_2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/black"
+                    android:text="3. Another window will show up and in the &quot;Advance&quot; section, click &quot;Settings&quot; button in the Perfomance section."/>
+
+                <ImageView
+                    android:id="@+id/perf_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/perf_3" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/black"
+                    android:text="4. A window will show up and under the visual effects you may uncheck all or some of the windows animation features."/>
+
+                <ImageView
+                    android:id="@+id/perf_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/perf_4" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_margin="20dp"
+                    android:textColor="@color/black"
+                    android:text="For a video tutorial, press the button below:"/>
+
+                <Button
+                    android:id="@+id/tutorFiveLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/link_button_bg"
+                    android:text="Click here"
+                    android:textColor="@color/black"
+                    android:visibility="visible"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"/>
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/blue_rounded_bg"
+                android:orientation="vertical"
+                android:layout_margin="20dp"
+                android:id="@+id/modSynp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Summary:"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deleting unnessesary files and adjust system performance increases computers performance"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Updating your operating system and system drivers may impact your computers performance too."
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:layout_margin="10dp"/>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="But upgrading your computer equipment will noticeably improve the performance level of your computer, ensuring smoother operation and reducing frustrating slowdowns"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:layout_margin="20dp"/>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="If symptoms persist, press the button below for more info:"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:layout_margin="10dp"/>
+
+                <Button
+                    android:id="@+id/mod5Link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/link_button_bg"
+                    android:text="Click here"
+                    android:textColor="@color/black"
+                    android:visibility="visible" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/modQuiz"
+                    android:layout_width="440dp"
+                    android:layout_height="85dp"
+                    android:background="#ebd957"
+                    android:text="Challenge Me!"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:layout_marginTop="16dp"
+                    />
+            </LinearLayout>
+
+            <!-- Add your other views here -->
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/navigationPanel"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:background="#555956"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/backButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone">
+
+        <!-- Navigation items -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/frstSol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_rounded_bg"
+            android:textColor="@color/black"
+            android:text="1st Solution"
+            android:layout_margin="8dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/tutorOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_rounded_bg"
+            android:textColor="@color/black"
+            android:text="How to delete temporary files using Windows Disk Cleanup"
+            android:textSize="13dp"
+            android:layout_margin="8dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/scndSol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_rounded_bg"
+            android:textColor="@color/black"
+            android:text="2nd Solution"
+            android:layout_margin="8dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/tutorTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_rounded_bg"
+            android:textColor="@color/black"
+            android:text="Steps to update your drivers using Windows Updates (win10/win11)"
+            android:textSize="13dp"
+            android:layout_margin="8dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/thrdSol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_rounded_bg"
+            android:textColor="@color/black"
+            android:text="3rd Solution"
+            android:layout_margin="8dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/tutorThree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_rounded_bg"
+            android:textColor="@color/black"
+            android:text="How to detect malwares using Microsoft Defender (win10/win11)"
+            android:textSize="13dp"
+            android:layout_margin="8dp"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/frthSol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_rounded_bg"
+            android:textColor="@color/black"
+            android:text="4th Solution"
+            android:layout_margin="8dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ffthSol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_rounded_bg"
+            android:textColor="@color/black"
+            android:text="5th Solution"
+            android:layout_margin="8dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/tutorFive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_rounded_bg"
+            android:textColor="@color/black"
+            android:text="How to Adjust Windows Performance using Advance System Properties"
+            android:textSize="13dp"
+            android:layout_margin="8dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/synp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_rounded_bg"
+            android:textColor="@color/black"
+            android:text="Summary"
+            android:layout_margin="8dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/challMe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_rounded_bg"
+            android:textColor="@color/black"
+            android:text="Challenge me"
+            android:layout_margin="8dp"/>
+
+        <!-- Add more navigation items as needed -->
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

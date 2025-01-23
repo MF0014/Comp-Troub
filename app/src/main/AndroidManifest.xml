@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/comp_troub_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/comp_troub_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CompTroub"
+        tools:targetApi="31" >
+        <activity
+            android:name=".imgviewer"
+            android:exported="false" />
+        <activity
+            android:name=".Module8_Setup.mod8_quiz_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Module7_Setup.mod7_quiz_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Module6_Setup.mod6_quiz_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Module5_Setup.mod5_quiz_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Module4_Setup.mod4_quiz_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Module8_Setup.mod8_quiz_result"
+            android:exported="false" />
+        <activity
+            android:name=".Module7_Setup.mod7_quiz_result"
+            android:exported="false" />
+        <activity
+            android:name=".Module6_Setup.mod6_quiz_result"
+            android:exported="false" />
+        <activity
+            android:name=".Module5_Setup.mod5_quiz_result"
+            android:exported="false" />
+        <activity
+            android:name=".Module4_Setup.mod4_quiz_result"
+            android:exported="false" />
+        <activity
+            android:name=".Module3_Setup.mod3_quiz_result"
+            android:exported="false" />
+        <activity
+            android:name=".Module3_Setup.mod3_quiz_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Module2_Setup.mod2_quiz_result"
+            android:exported="false" />
+        <activity
+            android:name=".Module2_Setup.mod2_quiz_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Module8_Setup.Module_8"
+            android:exported="false" />
+        <activity
+            android:name=".Module7_Setup.Module_7"
+            android:exported="false" />
+        <activity
+            android:name=".Module6_Setup.Module_6"
+            android:exported="false" />
+        <activity
+            android:name=".Module5_Setup.Module_5"
+            android:exported="false" />
+        <activity
+            android:name=".Module4_Setup.Module_4"
+            android:exported="false" />
+        <activity
+            android:name=".Module1_Setup.mod1_quiz_result"
+            android:exported="false" />
+        <activity
+            android:name=".Module1_Setup.mod1_quiz_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Module3_Setup.Module_3"
+            android:exported="false" />
+        <activity
+            android:name=".Module2_Setup.Module_2"
+            android:exported="false" />
+        <activity
+            android:name=".Module1_Setup.Module_1"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WelcomeScreen"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
